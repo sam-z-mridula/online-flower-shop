@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --title-color: #272727;
+  --para-color: rgba(39, 39, 39, 0.6);
+  --btn-color: #e55473;
+}
+
+/* Shared Styles */
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.para {
+  font-size: 0.85rem;
+  color: var(--para-color);
+  margin: 2rem 0;
+  line-height: 1.5rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--btn-color);
+  padding: 1rem 1.85rem;
+  font-weight: 550;
+}
+
+/* Header */
+
+header {
+  background-color: rgba(229, 84, 115, 0.1);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  gap: 4.5rem;
+}
+
+header div {
+  width: 50%;
+}
+
+.hero-left h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  color: var(--title-color);
+}
+
+.hero-left p {
+  width: 85%;
+}
+
+.hero-right img {
+  width: 90%;
+}
+
+/* Small Screen */
+
+@media screen and (max-width: 576px) {
+  .head {
+    flex-direction: column-reverse;
+  }
+
+  header div {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+}
